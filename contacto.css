@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #dfd0c2;
+}
+header, .main, footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+header{
+    background: url(imagenes/bannercripto.png);
+    height: 400px;
+}
+h1{
+    color: #F7F5E6;
+    font-size: 150px;
+    text-align: center;
+}
+header nav{
+    background: #333A56;
+    overflow:hidden;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    float:left;
+}
+header nav ul a{
+    padding: 10px 20px;
+    display: block;
+    color: #F7F5E6;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: #52658F;
+}
+.main .articles{
+    width: 68.5%;
+    float: left;
+    margin-right: 1.5%;
+}
+.main .articles article{
+    padding: 20px;
+    background: #F4F1DE;
+    margin-bottom: 20px;
+}
+aside{
+    width: 30%;
+    background: #52658F;
+    float: left;
+    padding: 20px;
+    box-sizing:border-box;
+    color: #F7F5E6;
+}
+footer{
+    background: #E8E8E8;
+    color: rgb(0, 0, 0);
+    clear:both;
+    padding: 10PX 0px;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+}
+.logos{
+    width: 100px;
+    padding-top: 20px;
+    padding-left:80px;
+}

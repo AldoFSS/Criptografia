@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dfd0c2;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+header, .main, footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+header {
+    background: url(imagenes/bannercripto.png) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+h1 {
+    color: #F7F5E6;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+header nav {
+    background: #333A56;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 5px;
+}
+
+header nav ul a {
+    padding: 10px 20px;
+    display: block;
+    color: #F7F5E6;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: #52658F;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .articles {
+    width: 100%;
+    flex: 1 1 60%;
+    margin-right: 1.5%;
+}
+
+.main .articles article {
+    padding: 20px;
+    background: #F4F1DE;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 100%;
+    flex: 1 1 30%;
+    background: #52658F;
+    padding: 20px;
+    color: #F7F5E6;
+    margin-top: 20px;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #E8E8E8;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+table, th, td {
+    border: 5px solid rgb(0, 0, 255);
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    background: #52658F;
+    color: #fff;
+    margin: 50px auto 0 auto;
+}
+
+th, td {
+    padding: 5px 10px;
+}
+
+th {
+    font-size: 20px;
+    background: #475076;
+}
+
+td:hover {
+    background: #E8E8E8;
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .main .articles, aside {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+}
